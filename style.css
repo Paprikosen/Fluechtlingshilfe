@@ -1,26 +1,38 @@
+:root {
+    font-size: 14px;
+    --color-blue: #303e4e;
+    --color-yellow: #a16561;
+    --color-black: #303e4e;
+    --color-font: white;
+    --background: #f6fbfa;
+}
+
 body {
     margin: 0;
     padding: 0;
     text-align: center;
+    background-color: var(--background);
 }
 
 header {
     display: flex;
     height: 10vh;
-    background-color: gray;
+    background-color: var(--color-black);
     justify-content: flex-end;
     align-items: center;
     flex-wrap: nowrap;
-    position: sticky;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 header h1 {
     display: flex;
-    color: white;
+    color: var(--color-font);
     font-family:Arial, Helvetica, sans-serif;
     margin-right: auto;
     margin-left: 10px;
-    font-size: 3vw;
+    font-size: 1.5rem;
     flex: 1 1 auto;
 }
 
@@ -31,22 +43,91 @@ nav {
 }
 
 .fi {
-    font-size: 150%;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.introduction {
+    margin-top: 15vh;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1.3rem
 }
 
 
 .fa.fa-whatsapp {
     display: relative;
-    font-size: 45px;
-    color: green;
+    font-size: 3rem;
+    color: rgb(85, 180, 85);
 }
 
 .card {
-    border: none;
-    width: 40%;
-    padding: 5px;
+    border: 2px solid var(--color-black);
+    width: 250px;
+    height: 185px;
+    padding: 15px 5px;
     margin: auto;
-    background-color: gray;
+    background: none;
     border-radius: 10%
 }
 
+.card p {
+    color: black;
+}
+
+.card button {
+    font-size: 1.3rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    background-color: var(--color-blue)
+}
+
+section {
+    width: 60%;
+    margin: auto;
+}
+
+.collapsible {
+    background-color: var(--color-blue);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 17px;
+  }
+  
+.collapsible.toggle {
+    background-color: #f1f1f1;
+    text-align: left;
+    color: black;
+    width: 100%;
+}
+
+.collapsible.toggle:hover {
+    background-color: #f1f1f1;
+}
+
+  .active, .collapsible:hover {
+    background-color: var(--color-black);
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    text-align: left;
+  }

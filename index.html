@@ -75,8 +75,88 @@
             </div>
 
             <h3>Die ersten Schritte nach der Ankunft in Morsbach</h3>
+            <p>Collapsible Set:</p>
+            <button type="button" class="collapsible">Den Wohnsitz anmelden</button>
+            <div class="content">
+            <button type="button" class="collapsible toggle">Ich wurde von der Gemeinde Morsbach untergebracht</button>
+            <div class="content">
+                <p>Dann müssen Sie nichts tun. Wir melden Sie direkt bei uns an. 
+             Wenn Sie eine Meldebescheinigung benötigen, bekommen Sie diese während der Öffnungszeiten im Bürgerbüro in der Gemeindeverwaltung Morsbach.</p>
+            </div>
+            <button type="button" class="collapsible toggle">Ich bin privat untergekommen/ Ich habe eine Unterkunft gemietet</button>
+            <div class="content">
+                <p>Bitte lassen Sie Ihren Vermieter die Wohnungsgeberbestätigung ausfüllen und unterschreiben. Bringen Sie dieses Dokument und Ihren Reisepass während der Öffnungszeiten in die Gemeindeverwaltung Morsbach.
+                    Im Bürgerbüro werden Sie angemeldet und erhalten eine Meldebescheinigung. <br>
 
-            
+                    Im Bürgerbüro wird man Sie nach Ihrem Geburtsort (Stadt), Ihrer Konfession und Ihren Familienstand fragen (ledig, verheiratet, geschieden, verwitwet)  fragen.
+                    
+                    Die Anmeldung muss spätestens 2 Wochen nach Einzug in die Unterkunft geschehen.<br> Die Anmeldung kann NICHT vor dem tatsächlichen Einzugsdatum geschehen.
+                    
+                    Der Link zur Wohnungsgeberbestätigung: <a href="https://www.morsbach.de/wp-content/uploads/2020/04/Wohnungsgeberbestaetigung_%C2%A719BMG.pdf">https://www.morsbach.de/wp-content/uploads/2020/04/Wohnungsgeberbestaetigung_§19BMG.pdf</a></p>
+            </div>
+            </div>
+
+            <button type="button" class="collapsible">Hilfe beim Sozialamt beantragen</button>
+            <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button type="button" class="collapsible">Ihren Namen auf den Briefkasten schreiben/kleben</button>
+            <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button type="button" class="collapsible">Ein Bankkonto eröffnen</button>
+            <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button type="button" class="collapsible">Kinder für die Schule / den Kindergarten anmelden</button>
+            <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button type="button" class="collapsible">Einladung von der Ausländerbehörde</button>
+            <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button type="button" class="collapsible">Anträge für das Jobcenter vorbereiten</button>
+            <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button type="button" class="collapsible">Weitere Anträge vorbereiten</button>
+            <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button type="button" class="collapsible">Für einen Integrationskurs anmelden</button>
+            <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button type="button" class="collapsible">UND/ODER: Arbeit findenn</button>
+            <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+                
+                for (i = 0; i < coll.length; i++) {
+                  coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                      content.style.display = "none";
+                    } else {
+                      content.style.display = "block";
+                    }
+                  });
+                }
+                </script>
         </section>
     </body>
 
