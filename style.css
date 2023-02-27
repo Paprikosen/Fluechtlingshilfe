@@ -1,7 +1,7 @@
 :root {
     font-size: 14px;
     --color-blue: #303e4e;
-    --color-yellow: #a16561;
+    --color-second: #00c881;
     --color-black: #303e4e;
     --color-font: white;
     --background: #f6fbfa;
@@ -89,7 +89,7 @@ p {
     border-radius: 5px;
     color: white;
     border: none;
-    background-color: var(--color-blue)
+    background-color: var(--color-second)
 }
 
 section {
@@ -108,26 +108,43 @@ section {
     outline: none;
     font-size: 17px;
   }
+
+  .collapsible:first-of-type {
+    border-radius: 5px 5px 0 0;
+
+  }
+
+.collapsible:last-of-type {
+    border-radius: 0 0 5px 5px;
+}
   
 .collapsible.toggle {
     background-color: #f1f1f1;
     text-align: left;
     color: black;
     width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.collapsible.toggle:last-of-type {
+    border-bottom: none;
 }
 
 .collapsible.toggle:hover {
     background-color: #f1f1f1;
 }
 
-  .active, .collapsible:hover {
+.active, .collapsible:hover {
     background-color: var(--color-black);
   }
   
-  .content {
+.content {
     padding: 0 18px;
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
     text-align: left;
+  }
+  footer {
+    margin-top: 20px;
   }
